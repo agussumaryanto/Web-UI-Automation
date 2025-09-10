@@ -14,12 +14,12 @@
 *.json linguist-language=JSON
 
 # Ignore HTML files so they don't dominate language stats
-#*.html linguist-detectable=false
+*.html linguist-detectable=false
 
 # Ignore HTML test reports
-#reports/* linguist-vendored
-#report/* linguist-vendored
-#test-output/* linguist-vendored
+reports/* linguist-vendored
+report/* linguist-vendored
+test-output/* linguist-vendored
 
 # Ignore build outputs
 target/* linguist-vendored
