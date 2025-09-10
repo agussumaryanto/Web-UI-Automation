@@ -20,7 +20,7 @@
 reports/* linguist-vendored
 report/* linguist-vendored
 test-output/* linguist-vendored
-#*.html linguist-detectable=false
+*.html linguist-detectable=false
 
 # Ignore build outputs
 target/* linguist-vendored
