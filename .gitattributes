@@ -1,22 +1,34 @@
 # Force Java as main language
 *.java linguist-language=Java
 
-# Recognize Gherkin feature files
+# Recognize Cucumber feature files
 *.feature linguist-language=Gherkin
 
-# Recognize XML for configs (e.g., pom.xml, testng.xml)
+# Recognize XML (pom.xml, testng.xml, config files)
 *.xml linguist-language=XML
 
 # Recognize Gradle files as Groovy
 *.gradle linguist-language=Groovy
 
-# Mark JSON files properly
+# Recognize JSON properly
 *.json linguist-language=JSON
 
-# Ignore build output directories
+# Ignore HTML files so they don't dominate language stats
+*.html linguist-detectable=false
+
+# Ignore build outputs
 target/* linguist-vendored
 build/* linguist-vendored
 out/* linguist-vendored
 
-# Ignore dependencies
+# Ignore dependency jars
 *.jar linguist-vendored
+
+# Ignore IntelliJ IDEA project files
+.idea/* linguist-vendored
+*.iml linguist-vendored
+
+# Ignore Eclipse project files if present
+.classpath linguist-vendored
+.project linguist-vendored
+.settings/* linguist-vendored
