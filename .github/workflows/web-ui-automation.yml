@@ -41,8 +41,8 @@ jobs:
         uses: actions/upload-artifact@v4.6.2
         if: always()
         with:
-          name: Reqres API Report Test
-          path: build/reports/
+          name: Saucedemo Web UI Test Report
+          path: reports/
       
       # Deploy to Github Pages
       - name: Deploy report to Github Pages
